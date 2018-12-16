@@ -8,3 +8,6 @@ $(function () {
     $(this).parent().parent().remove();
   });
 })
+
+$('.carousel').carousel()
+

@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
@@ -60,122 +60,50 @@
     </nav>
 
     <div class="container">
-      <div id="main_area">
-        <!-- Slider -->
-        <div class="row">
-          <div class="col-xs-12" id="slider">
-            <!-- Top part of the slider -->
-            <div class="row">
-              <div class="col-sm-8" id="carousel-bounding-box">
-                <div class="carousel slide" id="myCarousel">
-                  <!-- Carousel items -->
-                  <div class="carousel-inner">
-                    <div class="active item" data-slide-number="0">
-                      <img src="http://placehold.it/770x300&text=one"></div>
+      <div class="row">
+        <div class="span12 carousel-container">
+          <div id="carousel" class="carousel slide carousel-fade">
 
-                    <div class="item" data-slide-number="1">
-                      <img src="http://placehold.it/770x300&text=two"></div>
-
-                    <div class="item" data-slide-number="2">
-                      <img src="http://placehold.it/770x300&text=three"></div>
-
-                    <div class="item" data-slide-number="3">
-                      <img src="http://placehold.it/770x300&text=four"></div>
-
-                    <div class="item" data-slide-number="4">
-                      <img src="http://placehold.it/770x300&text=five"></div>
-
-                    <div class="item" data-slide-number="5">
-                      <img src="http://placehold.it/770x300&text=six"></div>
-                  </div><!-- Carousel nav -->
-                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div data-slide-no="0" class="item carousel-item active">
+                <img src="http://lorempixel.com/1920/1080/animals" alt="">
+                <div class="carousel-caption">
+                  <h4>We Help You Estimate!</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
               </div>
-
-              <div class="col-sm-4" id="carousel-text"></div>
-
-              <div id="slide-content" style="display: none;">
-                <div id="slide-content-0">
-                  <h2>Slider One</h2>
-                  <p>Lorem Ipsum Dolor</p>
-                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+              <div data-slide-no="1" class="item carousel-item">
+                <img src="http://lorempixel.com/1920/1080/food" alt="">
+                <div class="carousel-caption">
+                  <h4>second thumbnail</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
-
-                <div id="slide-content-1">
-                  <h2>Slider Two</h2>
-                  <p>Lorem Ipsum Dolor</p>
-                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                </div>
-
-                <div id="slide-content-2">
-                  <h2>Slider Three</h2>
-                  <p>Lorem Ipsum Dolor</p>
-                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                </div>
-
-                <div id="slide-content-3">
-                  <h2>Slider Four</h2>
-                  <p>Lorem Ipsum Dolor</p>
-                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                </div>
-
-                <div id="slide-content-4">
-                  <h2>Slider Five</h2>
-                  <p>Lorem Ipsum Dolor</p>
-                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
-                </div>
-
-                <div id="slide-content-5">
-                  <h2>Slider Six</h2>
-                  <p>Lorem Ipsum Dolor</p>
-                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+              </div>
+              <div data-slide-no="2" class="item carousel-item">
+                <img src="http://lorempixel.com/1920/1080/cats" alt="">
+                <div class="carousel-caption">
+                  <h4>Third Thumbnail label</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
               </div>
             </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
+            <a class="carousel-control right" href="#carousel" data-slide="next">›</a>
           </div>
-        </div><!--/Slider-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="myCarousel-target active"></li>
+            <li data-target="#carousel" data-slide-to="1" class="myCarousel-target"></li>
+            <li data-target="#carousel" data-slide-to="2" class="myCarousel-target"></li>
+          </ol>
 
-        <div class="row hidden-xs" id="slider-thumbs">
-          <!-- Bottom switcher of slider -->
-          <ul class="hide-bullets">
-            <li class="col-sm-2">
-              <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
-            </li>
-
-            <li class="col-sm-2">
-              <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
-            </li>
-
-            <li class="col-sm-2">
-              <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
-            </li>
-
-            <li class="col-sm-2">
-              <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
-            </li>
-
-            <li class="col-sm-2">
-              <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
-            </li>
-
-            <li class="col-sm-2">
-              <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
-
-  </div>
-
+    </div>
 
 
-  <!-- Add your site or application content here -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

@@ -9,5 +9,5 @@ $(function () {
   });
 })
 
-$('.carousel').carousel()
+$('.carousel').carousel();
 

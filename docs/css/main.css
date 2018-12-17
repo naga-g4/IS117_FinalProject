@@ -415,3 +415,7 @@ span.carousel-control-next-icon {
   margin: 0;
   padding: 0;
 }
+
+#wrapper {
+  width:960px;
+}

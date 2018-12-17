@@ -417,7 +417,7 @@ span.carousel-control-next-icon {
 }
 
 #wrapper {
-  width:960px;
+  width: auto;
   align-content: center;
   height: auto;
 }

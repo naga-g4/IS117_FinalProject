@@ -448,11 +448,11 @@ body { padding-top: 50px; }
   background-color:#eee;
 }
 
-@media (min-width: 992px) {
-  #myCarousel {padding-right:33.3333%;}
+@media (min-width: 960px) {
+  #myCarousel {padding-right:0;}
   #myCarousel .carousel-controls {display:none;}
 }
-@media (max-width: 991px) {
+@media (max-width: 960px) {
   .carousel-caption p,
   #myCarousel .list-group {display:none;}
 }

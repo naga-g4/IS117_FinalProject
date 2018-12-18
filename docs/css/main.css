@@ -366,12 +366,6 @@ a:hover, .btn{
   padding: 0;
 }
 
-#wrapper {
-  width: 960px;
-  align-content: center;
-  height: auto;
-}
-
 
 body { padding-top: 50px; }
 
@@ -406,3 +400,44 @@ body { padding-top: 50px; }
   .carousel-caption p,
   #myCarousel .list-group {display:none;}
 }
+
+#textAlignR{
+  text-align: right;
+  float: right;
+}
+
+.card-deck {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.card-img-top {
+  height: 200px;
+}
+
+#content {
+  padding-top: 20px;
+  clear: both;
+
+  align-content: center;
+}
+
+
+#footer {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.inLine {
+  display: inline;
+}
+
+.floatRight {
+  float: right;
+}
+
+.floatLeft {
+  float: left;
+}
+
+

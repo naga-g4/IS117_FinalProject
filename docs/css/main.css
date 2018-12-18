@@ -444,3 +444,24 @@ body { padding-top: 50px; }
 #image {
   padding-left: 274px;
 }
+
+.intro {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.infographic {
+  align-content: center;
+}
+
+
+/* .container {
+  background-color: #555555;
+}
+*/
+
+
+.card {
+  border-width: 2px;
+  border-color: black;
+}

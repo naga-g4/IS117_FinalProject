@@ -415,11 +415,8 @@ body { padding-top: 50px; }
   height: 200px;
 }
 
-#content {
+#intro {
   padding-top: 20px;
-  clear: both;
-
-  align-content: center;
 }
 
 
@@ -440,4 +437,10 @@ body { padding-top: 50px; }
   float: left;
 }
 
+#writtenHistory {
+  padding-top: 20px;
+}
 
+#image {
+  padding-left: 274px;
+}

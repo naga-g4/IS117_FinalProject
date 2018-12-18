@@ -465,3 +465,22 @@ body { padding-top: 50px; }
   border-width: 2px;
   border-color: black;
 }
+
+#small {
+  width: 300px;
+}
+
+.extraPadding {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.regPadding {
+  padding-top: 10px;
+}
+
+img {
+  border-width: thick;
+  border-color: black;
+}
+

@@ -7,12 +7,26 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
    html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -24,7 +38,9 @@
     text-shadow: none;
 }
 
-/
+/*
+ * A better looking default horizontal rule
+ */
 
 hr {
     display: block;
@@ -35,7 +51,11 @@ hr {
     padding: 0;
 }
 
-
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
 
 audio,
 canvas,
@@ -46,7 +66,9 @@ video {
     vertical-align: middle;
 }
 
-
+/*
+ * Remove default fieldset styles.
+ */
 
 fieldset {
     border: 0;
@@ -54,13 +76,17 @@ fieldset {
     padding: 0;
 }
 
-
+/*
+ * Allow only vertical resizing of textareas.
+ */
 
 textarea {
     resize: vertical;
 }
 
-
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -71,11 +97,46 @@ textarea {
 
 
 
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
  .hidden {
   display: none !important;
 }
 
-
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
 
 .visuallyhidden {
   border: 0;
@@ -89,7 +150,11 @@ textarea {
   white-space: nowrap; /* 1 */
 }
 
-
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
@@ -102,12 +167,25 @@ textarea {
   white-space: inherit;
 }
 
-
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
 
 .invisible {
   visibility: hidden;
 }
 
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
 
 .clearfix:before,
 .clearfix:after {
@@ -120,17 +198,29 @@ textarea {
 }
 
 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
 
    @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
 
 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
 
    @media print {
     *,
@@ -156,6 +246,10 @@ textarea {
         content: " (" attr(title) ")";
     }
 
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
 
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
@@ -171,6 +265,10 @@ textarea {
         page-break-inside: avoid;
     }
 
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
 
     thead {
         display: table-header-group;
@@ -237,7 +335,24 @@ body {
   margin-top:20px;
 }
 
+a:hover{
 
+}
+a, a:focus , a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover, .btn{
+  outline:none!important;
+}
+
+/*ROUNDED CORNER*/
+*{
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+/*CATEGORIES BADGE*/
 .badge {
   font-weight: 600;
   font-size: 13px;
@@ -254,7 +369,37 @@ body {
 
 body { padding-top: 50px; }
 
+#myCarousel .carousel-caption {
+  left:0;
+  right:0;
+  bottom:0;
+  text-align:left;
+  padding:10px;
+  background:rgba(0,0,0,0.6);
+  text-shadow:none;
+}
 
+#myCarousel .list-group {
+  position:absolute;
+  top:0;
+  right:0;
+}
+#myCarousel .list-group-item {
+  border-radius:0px;
+  cursor:pointer;
+}
+#myCarousel .list-group .active {
+  background-color:#eee;
+}
+
+@media (min-width: 990px) {
+  #myCarousel {padding-right:0;}
+  #myCarousel .carousel-controls {display:none;}
+}
+@media (max-width: 990px) {
+  .carousel-caption p,
+  #myCarousel .list-group {display:none;}
+}
 
 #textAlignR{
   text-align: right;
